@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariel Benger - Pilates Terapéutico y Holístico</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> 
+  <script src="https://cdn.tailwindcss.com"></script>
+<!-- En el head, reemplazamos Great Vibes por Satisfy -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Satisfy&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --color-primary: #6B46C1; /* lila */
+    --color-secondary: #68D391; /* verde */
+    --color-accent: #F6AD55; /* naranja */
+    --page-bg: #FBFAFF;
+  }
+
+  body { 
+    background: var(--page-bg); 
+    font-family: 'Poppins', sans-serif; 
+  }
+
+  h1, h2, h3 { 
+    font-family: 'Satisfy', cursive; 
+  }
+
+  .glass { 
+    background: rgba(255,255,255,0.7); 
+    backdrop-filter: blur(6px); 
+  }
+
+  .card-img { 
+    height: 220px; 
+    object-fit: cover; 
+    width: 100%; 
+  }
+
+  .prose-pre { 
+    white-space: pre-wrap; 
+    font-family: inherit; 
+  }
+</style>
+
+</head>
+<body class="text-gray-800">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-white/70 backdrop-blur shadow">
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <a href="#hero" class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-[var(--color-secondary)] to-[var(--color-primary)] flex items-center justify-center text-white font-bold">MB</div>
+      <div>
+        <div class="text-sm font-semibold">Mariel Benger</div>
+        <div class="text-xs text-gray-500">Pilates Terapéutico & Holístico</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm font-semibold text-[var(--color-primary)]">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#beneficios">Qué lográs</a>
+      <a href="#metodo">Mi método</a>
+      <a href="#integraciones">Integraciones</a>
+      <a href="#galeria">Galería</a>
+      <a href="#planes">Planes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="https://wa.me/5491123456789" class="hidden md:inline-block bg-[var(--color-secondary)] text-white px-4 py-2 rounded-full shadow">WhatsApp</a>
+    <button class="md:hidden text-[var(--color-primary)]" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">☰</button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden p-4 bg-white">
+    <a class="block py-2" href="#sobre-mi">Sobre mí</a>
+    <a class="block py-2" href="#beneficios">Qué lográs</a>
+    <a class="block py-2" href="#metodo">Mi método</a>
+    <a class="block py-2" href="#integraciones">Integraciones</a>
+    <a class="block py-2" href="#galeria">Galería</a>
+    <a class="block py-2" href="#planes">Planes</a>
+    <a class="block py-2" href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="relative h-[80vh] flex items-center justify-center bg-cover bg-center" style="background-image:url('https://source.unsplash.com/1600x900/?pilates,wellness');">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="relative z-10 text-center text-white px-6 max-w-3xl">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4"> Profe, activar tu rol terapéutico y holístico<br class="hidden md:block">Te lleva a vos y a tu clase al siguiente nivel</h1>
+    <p class="mb-6 text-lg md:text-xl">Innova fácilmente tu clase con esta herramienta y transformá la experiencia de tus alumnos.</p>
+    <div class="flex gap-4 justify-center">
+      <a href="#integraciones" class="bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Ver formación</a>
+      <a href="#contacto" class="bg-white text-[var(--color-primary)] px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Contactar</a>
+    </div>
+    <div class="mt-6 text-sm opacity-90">Seguinos: <a href="https://www.instagram.com/marielbenger" target="_blank" class="underline">instagram.com/marielbenger</a></div>
+  </div>
+</section>
+
+<!-- SOBRE MI (integrated PDF intro) -->
+<section id="sobre-mi" class="py-16 px-6 md:px-16">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h2 class="text-3xl font-bold text-[var(--color-primary)] mb-4">Soy Mariel Benger</h2>
+      <p class="mb-4">Soy Mariel Benger, y cuento con la experiencia y certificaciones desde hace 40 años en el ámbito del Fitness. Especialista y enamorada desde hace 20 años del Pilates. Mi propósito es formarte para que puedas tomar mejores decisiones a la hora de enfocar un entrenamiento sumando esta mirada a tu propia técnica, a tu clase.</p>
+      <p class="mb-4">Esta formación te da herramientas internas propias para poder tener y mantener tus alumnos en altos rendimientos físicos saludables y ellos sabrán valorarte como especialista en tu profesión.</p>
+      <a href="#planes" class="inline-block bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full font-semibold shadow">Comenzar formación</a>
+    </div>
+    <img src="https://source.unsplash.com/700x700/?trainer,coach" alt="Mariel Benger" class="rounded-2xl shadow-lg">
+  </div>
+</section>
+
+<!-- BENEFICIOS (más visual) -->
+<section id="beneficios" class="py-16 px-6 bg-gray-50">
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-3xl font-bold">Innova fácilmente tu clase</h2>
+    <p class="max-w-3xl mx-auto mt-4">La Formación del Rol Terapéutico Holístico te da la posibilidad de crear clases diferentes, destacándolas entre otras clases y además siendo recomendadas por los médicos y otros profesionales.</p>
+  </div>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+    <div class="card glass p-6 rounded-xl">
+      <img src="https://source.unsplash.com/600x400/?classroom,training" class="rounded-lg card-img mb-4" alt="Innova clase">
+      <h3 class="font-semibold text-xl mb-2">Clases diferentes</h3>
+      <p>Capacitándote con las herramientas terapéuticas que vienen con los nuevos paradigmas holísticos que ya están funcionando como terapéuticas de la salud en todas las áreas del ser.</p>
+    </div>
+    <div class="card glass p-6 rounded-xl">
+      <img src="https://source.unsplash.com/600x400/?doctor,clinic" class="rounded-lg card-img mb-4" alt="Recomendación médica">
+      <h3 class="font-semibold text-xl mb-2">Recomendación profesional</h3>
+      <p>Tus clases podrán ser recomendadas por médicos y otros profesionales por los resultados que logran en los alumnos.</p>
+    </div>
+    <div class="card glass p-6 rounded-xl">
+      <img src="https://source.unsplash.com/600x400/?happy,student" class="rounded-lg card-img mb-4" alt="Alumno">
+      <h3 class="font-semibold text-xl mb-2">Alumnos como testigos</h3>
+      <p>Tu alumno y alumna serán tus principales testigos: vivirán sin dolor en su día a día y eso te trae más alumnos y mejora tu economía.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MI MÉTODO (expanded with PDF text) -->
+<section id="metodo" class="py-16 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h2 class="text-3xl font-bold text-[var(--color-primary)] mb-4">MI MÉTODO</h2>
+      <p class="mb-4">El Método Terapeuta Holístico para Profes, es un enfoque de Actividad Física Integral, que busca promover la salud en la calidad de vida, integrando el cuerpo físico, mental y energético en el ejercicio.</p>
+      <p class="mb-4">Este enfoque complementa todos los conocimientos que ya tenés en tu técnica de entrenamiento llevándolos a una terapéutica en la que cada alumno va logrando reducir los síntomas, dolores e impedimentos para mejorar la calidad de la recepción del entrenamiento, abarcando las áreas mente y energía (emocional, espiritual, álmica) para mejorar su rendimiento físico y personal.</p>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Fortaleciendo los sistemas de defensa.</li>
+        <li>Reduciendo los síntomas provocados por el estrés.</li>
+        <li>Contemplando fundamentalmente la participación activa.</li>
+        <li>Logrando que el alumno permanezca en la salud.</li>
+      </ul>
+    </div>
+    <img src="https://source.unsplash.com/700x700/?healing,energy" alt="Método" class="rounded-2xl shadow-lg">
+  </div>
+</section>
+
+<!-- INTEGRACIONES PERFECTAS -->
+<section id="integraciones" class="py-16 px-6 bg-gray-50">
+  <div class="max-w-6xl mx-auto text-center mb-10">
+    <h2 class="text-3xl font-bold">Integraciones perfectas</h2>
+    <p class="max-w-3xl mx-auto mt-4">El Rol Terapéutico y Holístico en todas tus clases. En módulos, cada uno con su teoría y clase grabada, te llevás toda la información que necesitás para poder valorar tu clase un 100% más que ahora, demostrando con tu Rol terapéutico que lo vale.</p>
+  </div>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-start">
+    <div class="space-y-6">
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Ser Terapeuta. Ser Holístico</h3>
+        <p>La clase transformada con tu técnica de entrenamiento. Mentoría grupal e individual en casos específicos de tus alumnos con prácticas y evaluaciones.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Foros y Tutorías</h3>
+        <p>Foros de consultas en módulos especiales donde, paso a paso, sos holístico, terapéutico; cambiando la mirada de la salud y transformando tu clase.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Excelencia para tu alumno</h3>
+        <p>Tu alumno te trae otro alumno: la recomendación boca a boca se potencia cuando entregás resultados reales. Ser reconocido y recomendado te permite subir el valor de tu clase.</p>
+      </div>
+    </div>
+    <div class="p-6 rounded-xl glass">
+      <img src="https://source.unsplash.com/700x500/?group,workshop" class="rounded-lg w-full mb-6" alt="Integraciones">
+      <div>
+        <h4 class="font-semibold mb-2">Modalidad</h4>
+        <p class="mb-2">En módulos, cada uno con su teoría y clase grabada. Mentorías y tutorías prácticas supervisadas. Certificación final.</p>
+        <a href="#planes" class="inline-block bg-[var(--color-secondary)] text-white px-5 py-2 rounded-full font-semibold">Ver planes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPTIMIZA TUS ENTRENAMIENTOS (page 7 content) -->
+<section id="optimiza" class="py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center mb-8">
+    <h2 class="text-3xl font-bold">Optimiza tus entrenamientos</h2>
+    <p class="max-w-3xl mx-auto mt-4">Incorpora clases terapéuticas en todos tus entrenamientos. El Rol Terapéutico y Holístico se adapta a plataformas, clases presenciales y prácticas holísticas.</p>
+  </div>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-6 text-center">
+    <div class="p-6 bg-white rounded-xl shadow">
+      <h4 class="font-semibold">Gestión del Rol</h4>
+      <p class="text-sm">Aprendé a gestionar tu rol terapéutico dentro de la clase.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow">
+      <h4 class="font-semibold">Plataformas</h4>
+      <p class="text-sm">Adaptaciones para Zoom y plataformas online.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow">
+      <h4 class="font-semibold">Clases y prácticas holísticas</h4>
+      <p class="text-sm">Ejercicios integrados con enfoque terapéutico.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow">
+      <h4 class="font-semibold">Mentoría</h4>
+      <p class="text-sm">Mentoría grupal y personalizada para casos específicos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA / COLLAGE (más imágenes) -->
+<section id="galeria" class="py-16 px-6 bg-gray-50">
+  <div class="max-w-6xl mx-auto text-center mb-8">
+    <h2 class="text-3xl font-bold">Collage & Biblioteca visual</h2>
+    <p class="max-w-3xl mx-auto mt-4">Imágenes que muestran la esencia del trabajo: clases, práctica, formación y momentos de transformación.</p>
+  </div>
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="https://source.unsplash.com/600x600/?pilates,mat" class="rounded-lg shadow object-cover h-52 w-full">
+    <img src="https://source.unsplash.com/600x600/?pilates,teacher" class="rounded-lg shadow object-cover h-52 w-full">
+    <img src="https://source.unsplash.com/600x600/?workshop,group" class="rounded-lg shadow object-cover h-52 w-full">
+    <img src="https://source.unsplash.com/600x600/?healing,movement" class="rounded-lg shadow object-cover h-52 w-full">
+    <img src="https://source.unsplash.com/600x600/?therapy,class" class="rounded-lg shadow object-cover h-52 w-full">
+    <img src="https://source.unsplash.com/600x600/?stretching,care" class="rounded-lg shadow object-cover h-52 w-full">
+    <img src="https://source.unsplash.com/600x600/?mindfulness,group" class="rounded-lg shadow object-cover h-52 w-full">
+    <img src="https://source.unsplash.com/600x600/?balance,wellness" class="rounded-lg shadow object-cover h-52 w-full">
+  </div>
+  <div class="mt-6 text-center">
+    <a href="#contacto" class="inline-block bg-[var(--color-primary)] text-white px-6 py-3 rounded-full shadow">Quiero saber más</a>
+  </div>
+</section>
+
+<!-- SERVICIOS (cards con imágenes + textos del PDF) -->
+<section class="py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center mb-8">
+    <h2 class="text-3xl font-bold">Servicios destacados</h2>
+    <p class="mt-3 max-w-3xl mx-auto">Formaciones, mentorías, clases individuales y grupales, y un acompañamiento profundo para cada alumno.</p>
+  </div>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+    <div class="bg-white rounded-xl overflow-hidden shadow">
+      <img src="https://source.unsplash.com/800x600/?online,course" class="card-img" alt="Modulo">
+      <div class="p-6">
+        <h3 class="font-semibold text-xl mb-2">Módulos grabados</h3>
+        <p class="mb-4">Cada módulo incluye teoría y clase grabada: llevate todo el contenido para valorar tu clase un 100% más que ahora.</p>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl overflow-hidden shadow">
+      <img src="https://source.unsplash.com/800x600/?mentor,coach" class="card-img" alt="Mentoria">
+      <div class="p-6">
+        <h3 class="font-semibold text-xl mb-2">Mentoría</h3>
+        <p class="mb-4">Mentoría grupal e individual en casos específicos con prácticas y evaluaciones.</p>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl overflow-hidden shadow">
+      <img src="https://source.unsplash.com/800x600/?forum,community" class="card-img" alt="Foros">
+      <div class="p-6">
+        <h3 class="font-semibold text-xl mb-2">Foros y tutorías</h3>
+        <p class="mb-4">Foros de consultas en módulos especiales donde paso a paso te formás como terapeuta holístico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES / MODULOS (incluye precios tal cual PDF) -->
+<section id="planes" class="py-16 px-6 bg-secondary/10">
+  <div class="max-w-6xl mx-auto text-center mb-8">
+    <h2 class="text-3xl font-bold">Elige un plan que se adapte a vos</h2>
+    <p class="mt-3 max-w-3xl mx-auto">En módulos, cada uno con su teoría y clase grabada, mentorías y tutorías. Certificación final.</p>
+  </div>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-8 rounded-2xl shadow text-center">
+      <h3 class="text-2xl font-bold mb-4">PRUEBO UN MÓDULO</h3>
+      <p class="mb-4">1 Módulo/mes. Haz funcionar tu Rol de forma eficiente con el primer módulo. Paso a paso en 12 módulos/clases. Mentorías grupales e individuales. Tutorías prácticas supervisadas. Certificación Final.</p>
+      <p class="text-2xl font-bold mb-6">Valor Módulo /Clase 60 mil pesos Arg</p>
+      <a href="https://wa.me/5491123456789" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
+    </div>
+    <div class="bg-white p-8 rounded-2xl shadow text-center border-4 border-[var(--color-primary)]">
+      <h3 class="text-2xl font-bold mb-4">PRUEBO DOS MÓDULOS</h3>
+      <p class="mb-4">2 Módulos por mes, 1 cada 15 días. El Rol terapéutico garantizado. Mentoría grupales e individuales. Tutorías y prácticas supervisadas. Certificación Final.</p>
+      <p class="text-2xl font-bold mb-6">Valor Módulo/Clase 50 mil pesos Arg</p>
+      <a href="https://wa.me/5491123456789" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
+    </div>
+    <div class="bg-white p-8 rounded-2xl shadow text-center">
+      <h3 class="text-2xl font-bold mb-4">CRECE / EXPANDE</h3>
+      <p class="mb-4">4 Módulos al mes, 1 cada semana. El Rol Terapéutico garantizado. Mentorías en casos específicos. Mentoría en proyectos propios. Prácticas supervisadas virtuales.</p>
+      <p class="text-2xl font-bold mb-6">Valor Módulo/Clase 40 mil pesos Arg</p>
+      <a href="https://wa.me/5491123456789" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
+    </div>
+  </div>
+  <div class="mt-8 text-center">
+    <a href="https://wa.me/qr/VHSJH6OYQX4RD1" class="inline-block bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full shadow">Inscripción rápida (QR)</a>
+  </div>
+</section>
+
+
+<!-- TESTIMONIOS (visual) -->
+<section class="py-16 px-6 bg-gray-50">
+  <div class="max-w-6xl mx-auto text-center mb-8">
+    <h2 class="text-3xl font-bold">Testimonios de alumnos</h2>
+    <p class="max-w-3xl mx-auto mt-4">Historias reales de transformación con el método.</p>
+  </div>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <img src="https://source.unsplash.com/100x100/?woman,portrait" class="w-16 h-16 rounded-full mx-auto mb-4">
+      <p class="italic">“Después de mi primera clase pude moverme sin dolor.”</p>
+      <h4 class="font-semibold mt-3">— Mariana</h4>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <img src="https://source.unsplash.com/100x100/?man,portrait" class="w-16 h-16 rounded-full mx-auto mb-4">
+      <p class="italic">“Mi postura cambió y mis alumnos sienten la diferencia.”</p>
+      <h4 class="font-semibold mt-3">— Javier</h4>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <img src="https://source.unsplash.com/100x100/?happy,portrait" class="w-16 h-16 rounded-full mx-auto mb-4">
+      <p class="italic">“El método me dio herramientas prácticas para enseñar mejor.”</p>
+      <h4 class="font-semibold mt-3">— Ana</h4>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contacto" class="py-20 bg-[var(--color-primary)] text-white text-center">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4">VIVÍ TU CAMBIO — Empezá hoy</h3>
+    <p class="mb-6">Elegí un plan, probá un módulo y comprobá los resultados en tus clases. Tu rol terapéutico te posiciona y te hace crecer.</p>
+    <a href="https://wa.me/5491123456789" class="bg-[var(--color-secondary)] text-white px-8 py-3 rounded-full font-semibold mr-3">Inscribirme por WhatsApp</a>
+    <a href="#planes" class="bg-white text-[var(--color-primary)] px-8 py-3 rounded-full font-semibold">Ver planes</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 bg-gray-900 text-white">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-4">
+    <div>
+      <div class="font-semibold">Mariel Benger</div>
+      <div class="text-sm text-gray-300">Pilates Terapéutico & Holístico</div>
+      <div class="mt-2 text-xs">www.instagram.com/marielbenger</div>
+    </div>
+    <div class="flex gap-4">
+      <a href="https://www.instagram.com/marielbenger" target="_blank" class="hover:text-[var(--color-secondary)]">Instagram</a>
+      <a href="#" class="hover:text-[var(--color-secondary)]">Facebook</a>
+    </div>
+    <div class="text-sm">Desarrollado por <a href="https://wa.me/5491122222222" class="text-[var(--color-secondary)]">TuMarcaDev</a></div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/5491123456789" class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600">💬</a>
+
+</body>
+</html>

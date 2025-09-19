@@ -7,7 +7,7 @@
   <link rel="icon" href="data:;base64,iVBORw0KGgo="> 
   <script src="https://cdn.tailwindcss.com"></script>
 <!-- En el head, reemplazamos Great Vibes por Satisfy -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
   :root{
@@ -17,14 +17,15 @@
     --page-bg: #FBFAFF;
   }
 
-  body { 
-    background: var(--page-bg); 
-    font-family: 'Poppins', sans-serif; 
-  }
+body { 
+  background: var(--page-bg); 
+  font-family: 'Poppins', sans-serif; 
+}
 
-  h1, h2, h3 { 
-    font-family: 'Satisfy', cursive; 
-  }
+h1, h2, h3 { 
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 700;
+}
 
   .glass { 
     background: rgba(255,255,255,0.7); 
@@ -79,19 +80,34 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section id="hero" class="relative h-[80vh] flex items-center justify-center bg-cover bg-center" style="background-image:url('https://source.unsplash.com/1600x900/?pilates,wellness');">
+<!-- HERO actualizado -->
+<section id="hero" class="relative h-[80vh] flex items-center justify-center bg-cover bg-center" style="background-image:url('https://source.unsplash.com/1600x900/?pilates,yoga,fitness');">
   <div class="absolute inset-0 bg-black/50"></div>
   <div class="relative z-10 text-center text-white px-6 max-w-3xl">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4"> Profe, activar tu rol terapéutico y holístico<br class="hidden md:block">Te lleva a vos y a tu clase al siguiente nivel</h1>
-    <p class="mb-6 text-lg md:text-xl">Innova fácilmente tu clase con esta herramienta y transformá la experiencia de tus alumnos.</p>
-    <div class="flex gap-4 justify-center">
+    
+    <!-- Título directo al visitante -->
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-snug md:leading-relaxed">
+      ¿Sos profesor de Pilates, Yoga, Funcional o Fitness?
+    </h1>
+    
+    <!-- Subtítulo con propuesta de valor -->
+    <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 leading-relaxed">
+      Capacitate como Terapeuta Holístico y transformá tus clases y tu rol profesional
+    </h2>
+    
+    <!-- CTA -->
+    <div class="flex flex-col md:flex-row gap-4 justify-center mb-6">
       <a href="#integraciones" class="bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Ver formación</a>
       <a href="#contacto" class="bg-white text-[var(--color-primary)] px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Contactar</a>
     </div>
-    <div class="mt-6 text-sm opacity-90">Seguinos: <a href="https://www.instagram.com/marielbenger" target="_blank" class="underline">instagram.com/marielbenger</a></div>
+    
+    <!-- Instagram -->
+    <div class="mt-4 text-sm opacity-90">
+      Seguinos: <a href="https://www.instagram.com/marielbenger" target="_blank" class="underline">instagram.com/marielbenger</a>
+    </div>
   </div>
 </section>
+
 
 <!-- SOBRE MI (integrated PDF intro) -->
 <section id="sobre-mi" class="py-16 px-6 md:px-16">

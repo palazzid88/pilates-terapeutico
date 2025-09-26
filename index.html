@@ -22,7 +22,7 @@
       --color-secondary: #68D391; /* verde */
       --color-accent: #F6AD55; /* naranja */
       --navbar-gradient: linear-gradient(90deg, #ffde59, #ff914d, #ff914d); /* degradado naranja */
-      --page-gradient: linear-gradient(120deg, #ffde59, #ff914d, #ff6b00); /* degradado naranja principal */
+      --page-gradient: linear-gradient(120deg, #ffde59, #ff914d, #ff914d); /* degradado naranja principal */
     }
 
     body {
@@ -113,7 +113,7 @@
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <a href="https://wa.me/5491123456789" class="hidden md:inline-block bg-[var(--color-secondary)] text-white px-4 py-2 rounded-full shadow">WhatsApp</a>
+    <a href="https://wa.me/5491161286399" class="hidden md:inline-block bg-[var(--color-secondary)] text-white px-4 py-2 rounded-full shadow">WhatsApp</a>
 
     <!-- Botón menú móvil -->
     <button class="md:hidden" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">☰</button>
@@ -143,7 +143,7 @@
     </h2>
     <div class="flex flex-col md:flex-row gap-4 justify-center mb-6" data-aos="zoom-in" data-aos-delay="500">
       <a href="#integraciones" class="bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Ver formación</a>
-      <a href="#contacto" class="bg-white text-[var(--color-primary)] px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Contactar</a>
+      <a href="https://wa.me/5491161286399" class="bg-white text-[var(--color-primary)] px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Contactar</a>
     </div>
     <div class="mt-4 text-sm opacity-90" data-aos="fade-up" data-aos-delay="800">
       Seguinos: <a href="https://www.instagram.com/marielbenger" target="_blank" class="underline">instagram.com/marielbenger</a>
@@ -271,7 +271,7 @@ Así es que el ejercicio integrado transforma el entrenamiento enfocando al alum
 
     <!-- Columna derecha: imagen + info -->
     <div class="p-6 rounded-xl glass" data-aos="fade-left" data-aos-delay="500">
-      <img src="https://source.unsplash.com/700x500/?group,workshop" class="rounded-lg w-full mb-6 animate__animated animate__zoomIn" alt="Integraciones">
+      <img src="./img/certificado.png" class="rounded-lg w-60 mb-6 animate__animated animate__zoomIn" alt="Integraciones">
       <div>
         <h4 class="font-semibold mb-2 animate__animated animate__fadeInUp">Modalidad</h4>
         <p class="mb-2 animate__animated animate__fadeInUp animate__delay-1s">
@@ -341,32 +341,43 @@ Así es que el ejercicio integrado transforma el entrenamiento enfocando al alum
 <section class="py-16 px-6" data-aos="fade-up">
   <div class="max-w-6xl mx-auto text-center mb-8">
     <h2 class="text-3xl font-bold animate__animated animate__fadeInDown">Servicios destacados</h2>
-    <p class="mt-3 max-w-3xl mx-auto animate__animated animate__fadeIn" data-aos="fade-up">Formaciones, mentorías, clases individuales y grupales, y un acompañamiento profundo para cada alumno.</p>
+    <p class="mt-3 max-w-3xl mx-auto animate__animated animate__fadeIn" data-aos="fade-up">
+      Formaciones, mentorías, clases individuales y grupales, y un acompañamiento profundo para cada alumno.
+    </p>
   </div>
+
   <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-    <div class="bg-white rounded-xl overflow-hidden shadow animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="100">
-      <img src="https://source.unsplash.com/800x600/?online,course" class="card-img" alt="Modulo">
-      <div class="p-6">
-        <h3 class="font-semibold text-xl mb-2">Módulos grabados</h3>
-        <p class="mb-4">Cada módulo incluye teoría y clase grabada: llevate todo el contenido para valorar tu clase un 100% más que ahora.</p>
-      </div>
+    <!-- Módulos grabados -->
+    <div class="bg-white rounded-xl overflow-hidden shadow animate__animated animate__fadeInUp p-6 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100">
+      <!-- Icono -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-indigo-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.84 6.442L12 14z" />
+      </svg>
+      <h3 class="font-semibold text-xl mb-2">Módulos grabados</h3>
+      <p>Cada módulo incluye teoría y clase grabada: llevate todo el contenido para valorar tu clase un 100% más que ahora.</p>
     </div>
-    <div class="bg-white rounded-xl overflow-hidden shadow animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="200">
-      <img src="https://source.unsplash.com/800x600/?mentor,coach" class="card-img" alt="Mentoria">
-      <div class="p-6">
-        <h3 class="font-semibold text-xl mb-2">Mentoría</h3>
-        <p class="mb-4">Mentoría grupal e individual en casos específicos con prácticas y evaluaciones.</p>
-      </div>
+
+    <!-- Mentoría -->
+    <div class="bg-white rounded-xl overflow-hidden shadow animate__animated animate__fadeInUp p-6 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 16.5a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 16.5V7a2.5 2.5 0 012.5-2.5h13A2.5 2.5 0 0121 7v9.5z" />
+      </svg>
+      <h3 class="font-semibold text-xl mb-2">Mentoría</h3>
+      <p>Mentoría grupal e individual en casos específicos con prácticas y evaluaciones.</p>
     </div>
-    <div class="bg-white rounded-xl overflow-hidden shadow animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="300">
-      <img src="https://source.unsplash.com/800x600/?forum,community" class="card-img" alt="Foros">
-      <div class="p-6">
-        <h3 class="font-semibold text-xl mb-2">Foros y tutorías</h3>
-        <p class="mb-4">Foros de consultas en módulos especiales donde paso a paso te formás como terapeuta holístico.</p>
-      </div>
+
+    <!-- Foros y tutorías -->
+    <div class="bg-white rounded-xl overflow-hidden shadow animate__animated animate__fadeInUp p-6 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-pink-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 16.5a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 16.5V7a2.5 2.5 0 012.5-2.5h13A2.5 2.5 0 0121 7v9.5z" />
+      </svg>
+      <h3 class="font-semibold text-xl mb-2">Foros y tutorías</h3>
+      <p>Foros de consultas en módulos especiales donde paso a paso te formás como terapeuta holístico.</p>
     </div>
   </div>
 </section>
+
 
 <!-- PLANES / MODULOS -->
 <section id="planes" class="py-16 px-6 bg-secondary/10" data-aos="fade-up">
@@ -380,25 +391,25 @@ Así es que el ejercicio integrado transforma el entrenamiento enfocando al alum
       <h3 class="text-2xl font-bold mb-4">PRUEBO UN MÓDULO</h3>
       <p class="mb-4">1 Módulo/mes. Haz funcionar tu Rol de forma eficiente con el primer módulo. Paso a paso en 12 módulos/clases. Mentorías grupales e individuales. Tutorías prácticas supervisadas. Certificación Final.</p>
       <p class="text-2xl font-bold mb-6">Consultar valor</p>
-      <a href="https://wa.me/5491123456789" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
+      <a href="https://wa.me/5491161286399?text=Quiero%20consultar%20por%20el%20módulo%201" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
     </div>
     <!-- Plan 2 -->
     <div class="bg-white p-8 rounded-2xl shadow text-center border-4 border-[var(--color-primary)] animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="200">
       <h3 class="text-2xl font-bold mb-4">PRUEBO DOS MÓDULOS</h3>
       <p class="mb-4">2 Módulos por mes, 1 cada 15 días. El Rol terapéutico garantizado. Mentoría grupales e individuales. Tutorías y prácticas supervisadas. Certificación Final.</p>
       <p class="text-2xl font-bold mb-6">Consultar valor</p>
-      <a href="https://wa.me/5491123456789" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
+      <a href="https://wa.me/5491161286399?text=Quiero%20consultar%20por%20el%20módulo%202" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
     </div>
     <!-- Plan 3 -->
     <div class="bg-white p-8 rounded-2xl shadow text-center animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="300">
       <h3 class="text-2xl font-bold mb-4">CRECE / EXPANDE</h3>
       <p class="mb-4">4 Módulos al mes, 1 cada semana. El Rol Terapéutico garantizado. Mentorías en casos específicos. Mentoría en proyectos propios. Prácticas supervisadas virtuales.</p>
       <p class="text-2xl font-bold mb-6">Consultar valor</p>
-      <a href="https://wa.me/5491123456789" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
+      <a href="https://wa.me/5491161286399?text=Quiero%20consultar%20por%20el%20módulo%203" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
     </div>
   </div>
   <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="400">
-    <a href="https://wa.me/qr/VHSJH6OYQX4RD1" class="inline-block bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full shadow animate__animated animate__pulse animate__infinite">Inscripción rápida</a>
+    <a href="https://wa.me/5491161286399" class="inline-block bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full shadow animate__animated animate__pulse animate__infinite">Inscripción rápida</a>
   </div>
 </section>
 
@@ -430,6 +441,18 @@ Así es que el ejercicio integrado transforma el entrenamiento enfocando al alum
     duration: 1000, // duración de la animación en ms
     once: true,     // que se ejecute solo una vez
   });
+  // Selecciona todos los links del menú móvil
+  const mobileLinks = document.querySelectorAll('#mobile-menu a');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Oculta el menú
+      mobileMenu.classList.add('hidden');
+    });
+  });
+
+
 </script>
 
 

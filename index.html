@@ -11,6 +11,7 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
@@ -18,7 +19,7 @@
 
   <style>
     :root {
-      --color-primary: #6B46C1; /* lila */
+      --color-primary: #8B5CF6; /* lila */
       --color-secondary: #68D391; /* verde */
       --color-accent: #F6AD55; /* naranja */
       --navbar-gradient: linear-gradient(90deg, #ffde59, #ff914d, #ff914d); /* degradado naranja */
@@ -87,6 +88,10 @@
       backdrop-filter: blur(6px);
       color: #000;
     }
+
+    .font-script {
+      font-family: 'Dancing Script', cursive;
+    }
   </style>
 </head>
 <body class="text-gray-800">
@@ -98,7 +103,7 @@
       <img src="./img/Mariel Benger.png" alt="Logo MB Pilates" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
       <div>
         <div class="text-sm font-semibold">Mariel Benger</div>
-        <div class="text-xs">Pilates Terapéutico & Holístico</div>
+        <div class="text-xs">Terapéuta Holística</div>
       </div>
     </a>
 
@@ -107,7 +112,7 @@
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#beneficios">Qué lográs</a>
       <a href="#metodo">Mi método</a>
-      <a href="#integraciones">Integraciones</a>
+      <a href="#integraciones">Tu Rol</a>
       <a href="#galeria">Galería</a>
       <a href="#planes">Planes</a>
     </nav>
@@ -134,21 +139,37 @@
 <section id="hero" class="relative h-[100vh] flex items-center justify-center bg-cover bg-center" style="background-image:url('./img/banner.webp');">
   <div class="absolute inset-0 bg-black/50"></div>
   <div class="relative z-10 text-center text-white px-6 max-w-3xl" data-aos="fade-up">
-    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-snug md:leading-relaxed animate__animated animate__fadeInDown">
-      ¿Sos profesor de Pilates, Yoga, Funcional o Fitness?
-    </h1>
+    
+    <!-- Texto principal -->
+<h1 class="font-script text-5xl md:text-6xl lg:text-7xl mb-4 leading-snug animate__animated animate__fadeInDown">
+  ¿Sos Profe? 👈🏼
+</h1>
+
+    
+    <!-- Subtítulo -->
     <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 leading-relaxed animate__animated animate__fadeInUp animate__delay-1s">
-      Capacitate como Terapeuta Holístico y transformá tus clases y tu rol profesional
+      Ahora activá tu <span class="text-[var(--color-secondary)]">Rol Terapéutico</span><br />
+      y llevá tu Clase al siguiente Nivel
     </h2>
+    
+    <!-- Botones -->
     <div class="flex flex-col md:flex-row gap-4 justify-center mb-6" data-aos="zoom-in" data-aos-delay="500">
-      <a href="#integraciones" class="bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Ver formación</a>
-      <a href="https://wa.me/5491161286399" class="bg-white text-[var(--color-primary)] px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Contactar</a>
+      <a href="#integraciones" class="bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">
+        Ver formación
+      </a>
+      <a href="https://wa.me/5491161286399" target="_blank" class="bg-white text-[var(--color-primary)] px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">
+        Hacenos una pregunta
+      </a>
     </div>
+    
+    <!-- Redes -->
     <div class="mt-4 text-sm opacity-90" data-aos="fade-up" data-aos-delay="800">
-      Seguinos: <a href="https://www.instagram.com/marielbenger" target="_blank" class="underline">instagram.com/marielbenger</a>
+      Seguinos: 
+      <a href="https://www.instagram.com/marielbenger" target="_blank" class="underline">instagram.com/marielbenger</a>
     </div>
   </div>
 </section>
+
 
 <!-- SOBRE MI -->
 <section id="sobre-mi" class="py-16 px-6 md:px-16 bg-white-semi">
@@ -318,7 +339,7 @@ Así es que el ejercicio integrado transforma el entrenamiento enfocando al alum
 <!-- GALERÍA / COLLAGE -->
 <section id="galeria" class="py-16 px-6 bg-gray-50" data-aos="fade-up">
   <div class="max-w-6xl mx-auto text-center mb-8">
-    <h2 class="text-3xl font-bold animate__animated animate__fadeInDown">Collage & Biblioteca visual</h2>
+    <h2 class="text-3xl font-bold animate__animated animate__fadeInDown">Biblioteca visual</h2>
     <p class="max-w-3xl mx-auto mt-4 animate__animated animate__fadeIn" data-aos="fade-up">Imágenes que muestran la esencia del trabajo: clases, práctica, formación y momentos de transformación.</p>
   </div>
   <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -332,7 +353,7 @@ Así es que el ejercicio integrado transforma el entrenamiento enfocando al alum
     <img src="./img/18.webp" class="rounded-lg shadow object-cover h-52 w-full animate__animated animate__zoomIn" data-aos="zoom-in" data-aos-delay="700">
   </div>
   <div class="mt-6 text-center" data-aos="fade-up">
-    <a href="#contacto" class="inline-block bg-[var(--color-primary)] text-white px-6 py-3 rounded-full shadow animate__animated animate__pulse animate__infinite">Quiero saber más</a>
+    <a href="https://wa.me/5491161286399" class="inline-block bg-[var(--color-primary)] text-white px-6 py-3 rounded-full shadow animate__animated animate__pulse animate__infinite">Quiero saber más</a>
   </div>
 </section>
 
@@ -384,33 +405,105 @@ Así es que el ejercicio integrado transforma el entrenamiento enfocando al alum
     <h2 class="text-3xl font-bold animate__animated animate__fadeInDown">Elige un plan que se adapte a vos</h2>
     <p class="mt-3 max-w-3xl mx-auto animate__animated animate__fadeIn">En módulos, cada uno con su teoría y clase grabada, mentorías y tutorías. Certificación final.</p>
   </div>
+
   <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
     <!-- Plan 1 -->
     <div class="bg-white p-8 rounded-2xl shadow text-center animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="100">
-      <h3 class="text-2xl font-bold mb-4">PRUEBO UN MÓDULO</h3>
-      <p class="mb-4">1 Módulo/mes. Haz funcionar tu Rol de forma eficiente con el primer módulo. Paso a paso en 12 módulos/clases. Mentorías grupales e individuales. Tutorías prácticas supervisadas. Certificación Final.</p>
+      <h3 class="text-2xl font-bold mb-4">QUIERO UN MÓDULO</h3>
+      <ul class="text-left max-w-md mx-auto mb-4 space-y-3">
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)] flex-shrink-0"></span>
+          <span>1 módulo / mes</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Haz funcionar tu Rol de forma eficiente con el primer módulo</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Paso a paso en 12 módulos / clases</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Mentorías grupales e individuales</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Tutorías prácticas supervisadas</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Certificación final</span>
+        </li>
+      </ul>
       <p class="text-2xl font-bold mb-6">Consultar valor</p>
       <a href="https://wa.me/5491161286399?text=Quiero%20consultar%20por%20el%20módulo%201" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
     </div>
+
     <!-- Plan 2 -->
     <div class="bg-white p-8 rounded-2xl shadow text-center border-4 border-[var(--color-primary)] animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="200">
-      <h3 class="text-2xl font-bold mb-4">PRUEBO DOS MÓDULOS</h3>
-      <p class="mb-4">2 Módulos por mes, 1 cada 15 días. El Rol terapéutico garantizado. Mentoría grupales e individuales. Tutorías y prácticas supervisadas. Certificación Final.</p>
+      <h3 class="text-2xl font-bold mb-4">QUIERO DOS MÓDULOS</h3>
+      <ul class="text-left max-w-md mx-auto mb-4 space-y-3">
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>2 módulos por mes (1 cada 15 días)</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>El Rol terapéutico garantizado</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Mentorías grupales e individuales</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Tutorías y prácticas supervisadas</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Certificación final</span>
+        </li>
+      </ul>
       <p class="text-2xl font-bold mb-6">Consultar valor</p>
       <a href="https://wa.me/5491161286399?text=Quiero%20consultar%20por%20el%20módulo%202" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
     </div>
+
     <!-- Plan 3 -->
     <div class="bg-white p-8 rounded-2xl shadow text-center animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="300">
-      <h3 class="text-2xl font-bold mb-4">CRECE / EXPANDE</h3>
-      <p class="mb-4">4 Módulos al mes, 1 cada semana. El Rol Terapéutico garantizado. Mentorías en casos específicos. Mentoría en proyectos propios. Prácticas supervisadas virtuales.</p>
+      <h3 class="text-2xl font-bold mb-4">CREZCO Y ME EXPANDO</h3>
+      <ul class="text-left max-w-md mx-auto mb-4 space-y-3">
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>4 módulos al mes (1 cada semana)</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>El Rol terapéutico garantizado</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Mentorías en casos específicos</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Mentoría en proyectos propios</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-2 w-2 h-2 rounded-full bg-[var(--color-secondary)]"></span>
+          <span>Prácticas supervisadas virtuales</span>
+        </li>
+      </ul>
       <p class="text-2xl font-bold mb-6">Consultar valor</p>
       <a href="https://wa.me/5491161286399?text=Quiero%20consultar%20por%20el%20módulo%203" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-full">Inscribirme</a>
     </div>
   </div>
+
   <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="400">
     <a href="https://wa.me/5491161286399" class="inline-block bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full shadow animate__animated animate__pulse animate__infinite">Inscripción rápida</a>
   </div>
 </section>
+
 
 
 <!-- FOOTER -->
